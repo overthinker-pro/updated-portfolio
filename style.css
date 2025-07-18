@@ -10,7 +10,7 @@
   --font-body: "Public Sans", sans-serif;
   --font-heading: "DM Serif Display", serif;
   --container-width: 1120px;
-  --section-padding: 6rem 0;
+  --section-padding: 4rem 0;
   --card-padding: 2rem;
 }
 
@@ -157,8 +157,9 @@ ul {
 
 .hamburger-line {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 27px;
+  height: 4px;
+  border-radius: 40px;
   background-color: var(--color-text);
   margin: 5px 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -194,7 +195,7 @@ ul {
 
 /* --- HERO SECTION --- */
 .hero-section {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -233,17 +234,22 @@ ul {
 
 .about-image img {
   border-radius: 100%;
+  border: 6px solid #cba135;
+  box-sizing: border-box;
   filter: saturate(0);
-  transition: filter 0.4s ease, transform 0.4s ease;
+  transition: filter 0.4s, transform 0.4s, box-shadow 0.4s;
+  box-shadow: 0 0 32px 8px rgba(203, 161, 53, 0.6);
 }
 
 .about-image img:hover {
   filter: saturate(1);
   transform: scale(1.03);
+  border-color: #b58e2b;
+  box-shadow: 0 0 48px 18px rgba(203, 161, 53, 0.8);
 }
 
 .about-text p {
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .about-text strong {
