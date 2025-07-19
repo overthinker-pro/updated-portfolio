@@ -1,4 +1,8 @@
+/* Heading font */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@300;400;500;600;700&display=swap");
+/* Text content font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
   --color-bg: #f8f8f8;
@@ -7,7 +11,7 @@
   --color-accent: #cba135;
   --color-accent-hover: #b58e2b;
   --color-white: #ffffff;
-  --font-body: "Public Sans", sans-serif;
+  --font-body: "Montserrat", sans-serif;
   --font-heading: "DM Serif Display", serif;
   --container-width: 1120px;
   --section-padding: 3rem 0;
@@ -85,6 +89,12 @@ ul {
   height: 4px;
   background-color: var(--color-accent);
   margin: 0.5rem auto 0;
+}
+
+.section-desc {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -319,10 +329,12 @@ ul {
   left: 0;
   width: 100%;
   padding: 1.5rem;
+  color: #e5e5e5;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
 }
 
 .project-info h3 {
+  color: #e5e5e5;
   font-size: 1.5rem;
 }
 
