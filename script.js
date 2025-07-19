@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function openModal(modal) {
     if (modal == null) return;
     modal.classList.add("active");
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
+    document.body.style.overflow = "hidden";
 
     const closeModalElements = modal.querySelectorAll("[data-modal-close]");
     closeModalElements.forEach((element) => {
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "click",
         () => {
           modal.classList.remove("active");
-          document.body.style.overflow = "auto"; // Restore scrolling
+          document.body.style.overflow = "auto";
         },
         { once: true }
-      ); // Ensure event listener is removed after one click
+      );
     });
   }
 });
