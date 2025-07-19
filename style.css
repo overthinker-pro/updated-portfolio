@@ -266,6 +266,35 @@ ul {
   color: var(--color-accent);
 }
 
+.about-text .social-links {
+  margin-top: 1.5rem; /* Adds space above the icons */
+  display: flex;
+  justify-content: center; /* Centers the icon buttons */
+  align-items: center;
+  gap: 1rem; /* Controls space between icons */
+}
+
+.about-text .social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;  /* Button width */
+  height: 44px; /* Button height */
+  font-size: 1.25rem; /* Icon size */
+  color: var(--color-text); /* Default icon color */
+  background-color: #e9ecef; /* Light grey background */
+  border-radius: 50%; /* Makes the button circular */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-text .social-links a:hover,
+.about-text .social-links a:focus {
+  background-color: var(--color-text); /* Darker background on hover/focus */
+  color: var(--color-white); /* White icon on hover/focus */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 /* --- SERVICES SECTION --- */
 .services-section {
   padding: var(--section-padding);
@@ -361,21 +390,6 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.social-links a {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.social-links a:hover {
-  color: var(--color-accent);
 }
 
 /* --- RESPONSIVE DESIGN --- */
