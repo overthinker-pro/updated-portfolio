@@ -260,6 +260,7 @@ ul {
 
 .about-text p {
   margin: 1rem;
+  text-align: justify;
 }
 
 .about-text strong {
@@ -267,11 +268,11 @@ ul {
 }
 
 .about-text .social-links {
-  margin-top: 1.5rem; /* Adds space above the icons */
+  margin-top: 1.5rem;
   display: flex;
-  justify-content: center; /* Centers the icon buttons */
+  justify-content: center;
   align-items: center;
-  gap: 1rem; /* Controls space between icons */
+  gap: 1.5rem;
 }
 
 .about-text .social-links a {
@@ -323,6 +324,10 @@ ul {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: var(--color-accent);
+}
+
+.service-card p {
+  text-align: justify;
 }
 
 /* --- WORK SECTION --- */
