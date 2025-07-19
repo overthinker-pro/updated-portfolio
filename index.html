@@ -18,7 +18,8 @@
           <a href="\" class="logo">Overthinker Studio</a>
           <ul id="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#work">Featured Work</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -76,17 +77,32 @@
                 impactful experiences.
               </p>
               <div class="social-links">
-                <a href="#" aria-label="GitHub" target="_blank"
+                <a href="https://github.com/overthinker-pro" aria-label="GitHub" target="_blank"
                   ><i class="fa-brands fa-github"></i
                 ></a>
-                <a href="#" aria-label="LinkedIn" target="_blank"
+                <a href="https://www.linkedin.com/in/noel-v-abraham-582308221/" aria-label="LinkedIn" target="_blank"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
-                <a href="#" aria-label="Twitter" target="_blank"
+                <a href="https://x.com/No_Va_25" aria-label="Twitter" target="_blank"
                   ><i class="fa-brands fa-x-twitter"></i
                 ></a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section">
+        <div class="container">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-desc">
+            Click on a role to see more details about my experience.
+          </p>
+          <div class="experience-grid">
+            <!-- Experience Item 1 -->
+            <button class="experience-item" data-modal-target="#exp-modal-1">
+              <h3>Senior Frontend Developer</h3>
+            </button>
           </div>
         </div>
       </section>
@@ -158,6 +174,33 @@
         </div>
       </section>
     </main>
+
+    <!-- Modal for Experience Section -->
+    <div class="modal" id="exp-modal-1">
+      <div class="modal-overlay" data-modal-close></div>
+      <div class="modal-content">
+        <button class="modal-close-btn" data-modal-close>&times;</button>
+        <div class="modal-body">
+          <div class="modal-company-info">
+            <!-- Replace with your company's logo -->
+            <img src="images/company-logo-placeholder.png" alt="Company Logo" class="company-logo">
+            <div>
+              <h3 class="modal-position">Senior Frontend Developer</h3>
+              <p class="modal-company">Tech Solutions Inc.</p>
+              <p class="modal-period">Jan 2022 - Present</p>
+            </div>
+          </div>
+          <div class="modal-details">
+            <p>Here you can describe your role, responsibilities, and key achievements. For example: I led the redesign of the main customer-facing application, improving performance by 30% and user satisfaction by 15%. I also mentored junior developers and established new best practices for our team's codebase.</p>
+            <ul>
+              <li>Spearheaded the migration from legacy jQuery to a modern React/Next.js stack.</li>
+              <li>Developed and maintained a component library, reducing development time for new features.</li>
+              <li>Collaborated with the backend team to design and integrate RESTful APIs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="container">
