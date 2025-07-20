@@ -291,9 +291,9 @@ ul {
 
 .about-text .social-links a:hover,
 .about-text .social-links a:focus {
-  background-color: var(--color-text); /* Darker background on hover/focus */
-  color: var(--color-white); /* White icon on hover/focus */
-  transform: translateY(-2px); /* Slight lift effect */
+  background-color: var(--color-text);
+  color: var(--color-white);
+  transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -520,7 +520,7 @@ ul {
 }
 
 /* --- RESPONSIVE DESIGN --- */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hero-title {
     font-size: 3rem;
   }
