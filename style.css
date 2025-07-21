@@ -486,11 +486,15 @@ ul {
   width: 100%;
   padding: 1.5rem;
   color: #e5e5e5;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  background: linear-gradient(
+    to top,
+    rgba(31, 31, 31, 0.95),
+    rgba(31, 31, 31, 0.918)
+  );
 }
 
 .project-info h3 {
-  color: #e5e5e5;
+  color: #f4f4f4;
   font-size: 1.5rem;
 }
 
@@ -599,5 +603,30 @@ ul {
 
   .hero-cta {
     flex-direction: column;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card a {
+    background-color: var(--color-white);
+    border: 1px solid #e5e5e5;
+  }
+
+  .project-card img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .project-info {
+    position: static;
+    background: none;
+    color: var(--color-text-secondary);
+  }
+
+  .project-info h3 {
+    color: var(--color-text);
+    margin-bottom: 10px;
   }
 }
