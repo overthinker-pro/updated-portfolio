@@ -468,10 +468,13 @@ ul {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
-  color: var(--color-light-text);
+  aspect-ratio: 16 / 9;
 }
 
 .project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.4s ease;
 }
 
@@ -488,8 +491,9 @@ ul {
   color: #e5e5e5;
   background: linear-gradient(
     to top,
-    rgba(31, 31, 31, 0.95),
-    rgba(31, 31, 31, 0.918)
+    rgb(44, 44, 44) 40%,
+    rgba(51, 51, 51, 0.913) 60%,
+    transparent 100%
   );
 }
 
@@ -613,6 +617,7 @@ ul {
   .project-card a {
     background-color: var(--color-white);
     border: 1px solid #e5e5e5;
+    aspect-ratio: auto; /* Reset aspect ratio for mobile layout */
   }
 
   .project-card img {
