@@ -176,7 +176,7 @@ ul {
 
 .main-nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .main-nav ul a {
@@ -468,7 +468,7 @@ ul {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
-  aspect-ratio: 16 / 9;
+  /* aspect-ratio: 16 / 9; */
 }
 
 .project-card img {
@@ -502,6 +502,51 @@ ul {
   margin-bottom: 15px;
 }
 
+/* --- PHOTOGRAPHY SECTION STYLES --- */
+#photography .project-card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(44, 44, 46, 0.05);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+#photography .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(44, 44, 46, 0.1);
+}
+
+#photography .project-card img {
+  aspect-ratio: 4 / 3;
+  transition: all 0.3s ease-in-out;
+}
+
+#photography .project-info {
+  position: static;
+  background: none;
+  color: var(--color-text-secondary);
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#photography .project-info h3 {
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+#photography .project-info p {
+  margin-bottom: 1.5rem;
+}
+
+#photography .project-info .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 /* --- CONTACT SECTION --- */
 .contact-section {
   padding: var(--section-padding);
@@ -528,7 +573,7 @@ ul {
 }
 
 /* --- RESPONSIVE DESIGN --- */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .hero-title {
     font-size: 3rem;
   }
@@ -616,7 +661,12 @@ ul {
   .project-card a {
     background-color: var(--color-white);
     border: 1px solid #e5e5e5;
-    aspect-ratio: auto; /* Reset aspect ratio for mobile layout */
+    aspect-ratio: auto;
+  }
+
+  #photography .project-card {
+    background-color: var(--color-white);
+    border: 1px solid #e5e5e5;
   }
 
   .project-card img {
