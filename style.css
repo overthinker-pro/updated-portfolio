@@ -547,7 +547,7 @@ ul {
   margin-top: auto;
 }
 
-/* Photography Carousel */
+/* Photography Slideshow */
 .slideshow-container {
   position: relative;
   width: 70%;
@@ -556,7 +556,17 @@ ul {
   margin: auto;
   overflow: hidden;
   border-radius: 12px;
-  margin-top: 30px;
+}
+
+.slideshow-title {
+  text-align: center;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  text-decoration: underline;
 }
 
 .slide {
@@ -591,16 +601,32 @@ ul {
 .slide:nth-child(7) {
   animation-delay: 21s;
 }
-
-@keyframes fadeSlide {
-  0%   { opacity: 0; }
-  8%   { opacity: 1; }
-  33%  { opacity: 1; }
-  41%  { opacity: 0; }
-  100% { opacity: 0; }
+.slide:nth-child(8) {
+  animation-delay: 24s;
+}
+.slide:nth-child(9) {
+  animation-delay: 27s;
 }
 
-@media (max-width: 500px){
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 500px) {
   .slideshow-container {
     width: 90%;
     height: 450px;
@@ -608,6 +634,85 @@ ul {
 
   .slide {
     height: 100%;
+  }
+}
+
+/* Magazine Card Styling */
+.magazine-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.magazine-card {
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  background: #f4f4f4;
+  padding: 20px;
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+
+.magazine-image {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 12px #0000001a;
+}
+
+.magazine-content {
+  flex: 1;
+}
+
+.magazine-content h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.magazine-content p {
+  font-size: 1rem;
+  margin: 10px 0 16px;
+  color: #555;
+}
+
+.magazine-content .btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.magazine-content .btn:hover {
+  background-color: #444;
+}
+
+@media (max-width: 500px) {
+  .magazine-card {
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .magazine-image {
+    width: 200px;
+    height: auto;
+  }
+
+  .magazine-content {
+    text-align: center;
+  }
+
+  .magazine-content btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
