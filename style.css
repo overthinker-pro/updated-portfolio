@@ -600,7 +600,16 @@ ul {
   100% { opacity: 0; }
 }
 
+@media (max-width: 500px){
+  .slideshow-container {
+    width: 90%;
+    height: 300px;
+  }
 
+  .slide {
+    height: 100%;
+  }
+}
 
 
 /* --- CONTACT SECTION --- */
