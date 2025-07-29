@@ -547,6 +547,39 @@ ul {
   margin-top: auto;
 }
 
+/* Photography Carousel */
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 10px;
+  animation: scroll-left 10s linear infinite;
+}
+
+.scroll-content img {
+  height: 250px;
+  margin-right: 16px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 /* --- CONTACT SECTION --- */
 .contact-section {
   padding: var(--section-padding);
